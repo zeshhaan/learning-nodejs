@@ -1,10 +1,18 @@
 const express = require("express");
-
 const app = express();
-const server = app.listen(80, () =>
-  console.log("server listening on port " + 80)
+const port = 3000;
+
+const server = app.listen(port, () =>
+  console.log("server listening on port " + port)
 );
 
+app.set("view engine", "pug");
+app.set("views", "views");
+
 app.get("/", (req, res, next) => {
-  res.status(200).send("Yaahoo!");
+  const payload = {
+    pageTitle: "Home",
+  };
+
+  res.status(200).render("home", payload);
 });
