@@ -1,0 +1,15 @@
+{
+  "name": "twitter-clone-udemy",
+  "version": "0.0.1",
+  "description": "Learning NodeJS by building something like Twitter",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node app.js"
+  },
+  "author": "Mohammed Zeeshan",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
